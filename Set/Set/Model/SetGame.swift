@@ -1,11 +1,4 @@
-//
-//  Card.swift
-//  Set
-//
-//  Created by Chenqin zhang on 2024/2/8.
-//
-
-import Foundation
+/import Foundation
 import SwiftUI
 
 struct SetGame {
@@ -120,27 +113,7 @@ struct SetGame {
         //setSetStatus()
     }
     
-    
-    // Remove matched cards in display cards
-    // threes thing
-    // 1. remove correspond cards in displaycards
-    // 2. remove correspond id in displaycardsId
-    // 3. add card id to discardCardsID
     mutating func removeMatchingSet(){
-        
-//        displayCards = displayCards.filter { card in
-//            !selectedCards.contains { $0.id == card.id }
-//        }
-//        displayCardsId = displayCardsId.filter { id in
-//            !selectedCards.contains { $0.id == id }
-//        }
-        
-        
-        
-//            for card in selectedCards{
-//                discardCardsId.insert(card.id)
-//                discardCards.append(card)
-//            }
         
         
         matchCards = selectedCards
@@ -244,10 +217,6 @@ struct Content: Equatable {
     enum Shape: CaseIterable {
         case diamond, squiggle, oval
     }
-    
-//    enum ContentColor: CaseIterable {
-//        case red, green, purple
-//    }
     
     enum NumberOfShape: CaseIterable {
         case one, two, three
